@@ -6,7 +6,6 @@
 package seminarium3;
 
 /**
- *
  * @author Aldin
  */
 public class Seminarium3 {
