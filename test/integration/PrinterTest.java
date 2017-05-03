@@ -23,9 +23,9 @@ public class PrinterTest {
     @Test
     public void testPrintReciept() {
         System.out.println("printReciept");
-        Reciept reciept = null;
+        int cost = 150;
         Printer instance = new Printer();
-        instance.printReciept(reciept);
+        instance.printReciept(cost);
         
     }
     
