@@ -17,9 +17,11 @@ public class Garage {
          */
         
         public void open(){
-           doorStatus = 1; 
+           System.out.println("Garage door opens"); 
+           doorStatus = 1;
         }
         public void close(){
+            System.out.println("Garage door closes"); 
             doorStatus = 2;
         }
         /**

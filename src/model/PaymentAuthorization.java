@@ -19,7 +19,7 @@ public class PaymentAuthorization {
         if(cost > bankAccountBalance){
             approval = true;
         }
-        
+        System.out.println("Payment has been authorized");
         return approval;
     }
 }

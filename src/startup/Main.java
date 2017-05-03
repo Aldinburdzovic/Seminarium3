@@ -19,6 +19,7 @@ public class Main {
         Controller contr = new Controller(dbMgr);
         View view = new View(contr);
         view.execution();
+       
         
         
     }

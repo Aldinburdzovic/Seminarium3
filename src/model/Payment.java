@@ -32,7 +32,7 @@ public class Payment {
      */
     private void createReciept(int cost){
     Reciept recieptOfPayment = new Reciept(cost);
-    print.printReciept(recieptOfPayment);
+    
 }
 }
 

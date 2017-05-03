@@ -14,7 +14,7 @@ public class DisplayNumber {
      */
     
     public static int nextNumber(){
-        nextNumber = 1;
+        nextNumber = 0;
         nextNumber++;
         return nextNumber;
     }

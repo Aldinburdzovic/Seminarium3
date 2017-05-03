@@ -4,8 +4,8 @@ package controller;
 import integration.DatabaseManager;
 import integration.DisplayNumber;
 import integration.Garage;
+import integration.Printer;
 import integration.SpecifiedInspection;
-import java.util.List;
 import model.CreditCard;
 import model.Display;
 import model.Inspection;
@@ -73,8 +73,9 @@ public class Controller {
         int cost = inspection.getCost();
         boolean paymentApproval = PaymentAuthorization.authorization(creditCard, cost);
         if(paymentApproval){
-        Payment newPayment = new Payment(creditCard, 0); //kolla upp
+        Payment newPayment = new Payment(creditCard, cost);
         }
+        Printer.printReciept(cost);
     }
     /**
      * This method gets the specific inspection to perform.
@@ -82,7 +83,7 @@ public class Controller {
      */
     public SpecifiedInspection getInspection(){
         int n = 0;
-        SpecifiedInspection currentInsp = inspections[0];  //kolla upp
+        SpecifiedInspection currentInsp = inspections[0];  
         n++;
         return currentInsp;
     }

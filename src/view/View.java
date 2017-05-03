@@ -30,7 +30,7 @@ public class View {
         
         String vehicleRegNumber = "ABC123"; 
         int cost = contr.enterVehicleNumber(vehicleRegNumber);
-        System.out.println(cost);
+        System.out.println("Cost of inspection: " + cost);
         
         CreditCard creditCardInfo = creditCard;
         contr.cardPayment(creditCardInfo);

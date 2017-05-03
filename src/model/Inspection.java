@@ -28,10 +28,10 @@ public class Inspection {
     */
     public int getCost(){
         int totalCost = 0;
-        /**for(SpecifiedInspection specInsp : inspections){
-        totalCost += specInsp.getCost();                    //kolla upp
-   }*/
-        totalCost = SpecifiedInspection.getCost();
+        for(SpecifiedInspection specInsp : inspections){
+        totalCost = totalCost + specInsp.getCost();                   
+   }
+       
         
         return totalCost;
     }

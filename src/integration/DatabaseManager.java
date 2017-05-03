@@ -48,6 +48,10 @@ public class DatabaseManager {
     public void createResults(boolean result){
         results = new ArrayList();
         results.add(result);
+        if(result){
+        System.out.println("RESULT");
+        System.out.println("Inspection passed");
+        }
         
     }
 }

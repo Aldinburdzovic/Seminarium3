@@ -10,6 +10,6 @@ public class Display {
      * @param nextNumber next queue number
      */
     public static void displayNumber(int nextNumber){
-        System.out.println(nextNumber);
+        System.out.println("Next queue number: " + nextNumber);
     }
 }

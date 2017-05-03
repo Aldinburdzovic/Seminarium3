@@ -6,7 +6,7 @@ package integration;
  */
 public class SpecifiedInspection {
     private final String name;
-    private static int cost;
+    private final int cost;
     /**
      * Creates the instance of the specified inspection to be performed
      * @param name the name of the part to inspect
@@ -20,7 +20,7 @@ public class SpecifiedInspection {
      * return the cost for the specific inspection
      * @return the cost of the specifc inspection.
      */
-    public static int getCost(){
+    public int getCost(){
         return cost;
     }
 }
